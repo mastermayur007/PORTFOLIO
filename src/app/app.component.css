@@ -1,0 +1,52 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  font-size: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.nav-link {
+  color: #333 !important;
+  margin-right: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  height: calc(100vh - 56px); /* Adjust height considering navbar height */
+  background: linear-gradient(to bottom, #fff, #f8f9fa);
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #ddd;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}

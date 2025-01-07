@@ -1,0 +1,51 @@
+/* Projects Section Styling */
+.projects-section {
+  background-color: #f9f9f9;
+}
+
+.projects-section h6 {
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h5 {
+  font-size: 1.25rem;
+}
+
+.buttons a {
+  font-size: 0.875rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #000;
+  color: #fff;
+}
