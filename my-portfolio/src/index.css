@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #18181b;
+  background: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+/* Section Spacing */
+.section-padding {
+  padding: 100px 24px;
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+/* Photo Card */
+.photo-card {
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Contact Cards */
+.contact-card {
+  display: block;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  border-color: #93c5fd;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+.hero-glow
+.hero-glow-one
+.hero-glow-two
+.floating-card
+.floating-badge
+.tech-badge
+.hero-button
+@keyframes floatingCard
+@keyframes floatingBadge
+@keyframes floatingGlow
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Projects */
+.project-card {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  background: white;
+  transition:
+    transform 350ms ease,
+    box-shadow 350ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.1);
+}
+
+/* Project Preview */
+.project-preview {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  transition: background 350ms ease;
+}
+
+.project-card:hover .project-preview {
+  background: linear-gradient(135deg, #1e293b, #4f46e5);
+}
+
+.project-number {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(255 255 255 / 0.65);
+}
+
+.project-category {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  border-radius: 9999px;
+  padding: 6px 12px;
+  font-size: 0.7rem;
+  color: rgb(255 255 255 / 0.8);
+}
+
+.project-preview-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease;
+}
+
+.project-card:hover .project-preview-content {
+  transform: scale(1.12) rotate(-3deg);
+}
+
+/* Project Links */
+.project-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  transition:
+    color 250ms ease,
+    transform 250ms ease;
+}
+
+.project-link:hover {
+  color: #2563eb;
+  transform: translateX(3px);
+}
+
+/* About Statistics */
+.about-stat {
+  min-height: 160px;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
+.about-stat:hover {
+  transform: translateY(-6px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+}
